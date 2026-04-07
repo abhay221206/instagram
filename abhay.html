@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      let arr = [20, 45, 35, 12, 21, 78, 6, 25, 42];
+      let new_data = 52;
+      let find = 45;
+      let delet1 = 78;
+
+      function abhay(data) {
+        for (let i = data.length; i > 0; i--) {
+          data[i] = data[i + 1];
+          data[i] = new_data;
+
+          return data;
+        }
+      }
+
+      function finddata(data) {
+        for (let i = 0; i < data.length - 1; i++) {
+          if (data[i] === find) {
+            console.log("hii abhay ye data database me hai");
+          }
+        }
+      }
+
+      function deleted(data) {
+        for (let i = 0; i < data.length - 1; i++) {
+          if (data[i] === delet1) {
+            data[i]=data[i+1];
+            data[i]=data[i-1]
+
+
+            return data;
+          }
+        }
+      }
+
+      console.log(finddata(arr));
+      console.log(abhay(arr));
+     console.log(deleted(arr))
+    </script>
+  </head>
+  <body>
+    <h1>hello abhay patel</h1>
+  </body>
+</html>
